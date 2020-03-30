@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://farmos.org/community/monthly-call/">
+        <link rel="canonical" href="http://farmos.org/development/configure-local-https-reverse-proxy/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Monthly Call - farmOS.org</title>
+        <title>Configuring a Local Https Reverse Proxy - farmOS.org</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -194,52 +194,52 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../development/drupal/" class="dropdown-item">Drupal</a>
+    <a href="../drupal/" class="dropdown-item">Drupal</a>
 </li>
                                     
 <li>
-    <a href="../../development/projects/" class="dropdown-item">Projects</a>
+    <a href="../projects/" class="dropdown-item">Projects</a>
 </li>
                                     
 <li>
-    <a href="../../development/issue-queues/" class="dropdown-item">Issue Queues</a>
+    <a href="../issue-queues/" class="dropdown-item">Issue Queues</a>
 </li>
                                     
 <li>
-    <a href="../../development/architecture/" class="dropdown-item">Architecture</a>
+    <a href="../architecture/" class="dropdown-item">Architecture</a>
 </li>
                                     
 <li>
-    <a href="../../development/update-safety/" class="dropdown-item">Update Safety</a>
+    <a href="../update-safety/" class="dropdown-item">Update Safety</a>
 </li>
                                     
 <li>
-    <a href="../../development/docker/" class="dropdown-item">Docker</a>
+    <a href="../docker/" class="dropdown-item">Docker</a>
 </li>
                                     
 <li>
-    <a href="../../development/api/" class="dropdown-item">API</a>
+    <a href="../api/" class="dropdown-item">API</a>
 </li>
                                     
 <li>
-    <a href="../../development/client/" class="dropdown-item">Client</a>
+    <a href="../client/" class="dropdown-item">Client</a>
 </li>
                                     
 <li>
-    <a href="../../development/release/" class="dropdown-item">Release procedure</a>
+    <a href="../release/" class="dropdown-item">Release procedure</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../contribute/" class="dropdown-item">Contribute</a>
+    <a href="../../community/contribute/" class="dropdown-item">Contribute</a>
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Monthly Call</a>
+    <a href="../../community/monthly-call/" class="dropdown-item">Monthly Call</a>
 </li>
                                     
 <li>
@@ -251,23 +251,23 @@
 </li>
                                     
 <li>
-    <a href="../farms/" class="dropdown-item">Farms</a>
+    <a href="../../community/farms/" class="dropdown-item">Farms</a>
 </li>
                                     
 <li>
-    <a href="../maintainers/" class="dropdown-item">Maintainers</a>
+    <a href="../../community/maintainers/" class="dropdown-item">Maintainers</a>
 </li>
                                     
 <li>
-    <a href="../supporters/" class="dropdown-item">Supporters</a>
+    <a href="../../community/supporters/" class="dropdown-item">Supporters</a>
 </li>
                                     
 <li>
-    <a href="../press/" class="dropdown-item">Press</a>
+    <a href="../../community/press/" class="dropdown-item">Press</a>
 </li>
                                     
 <li>
-    <a href="../trademark/" class="dropdown-item">Trademark</a>
+    <a href="../../community/trademark/" class="dropdown-item">Trademark</a>
 </li>
                                 </ul>
                             </li>
@@ -286,17 +286,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../contribute/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../farms/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/farmOS/farmOS.org/edit/7.x-1.x/docs/community/monthly-call.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/farmOS/farmOS.org/edit/7.x-1.x/docs/development/configure-local-https-reverse-proxy.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -316,9 +306,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#monthly-call" class="nav-link">Monthly Call</a>
+            <li class="nav-item" data-level="1"><a href="#configuring-a-local-https-reverse-proxy" class="nav-link">Configuring a Local Https Reverse Proxy</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#join-call" class="nav-link">Join Call</a>
+            <li class="nav-item" data-level="2"><a href="#example-configuration" class="nav-link">Example Configuration</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -329,32 +319,112 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="monthly-call">Monthly Call<a class="headerlink" href="#monthly-call" title="Permanent link">&para;</a></h1>
-<p>The farmOS community hosts a monthly call via <a href="https://zoom.us">Zoom</a>. Anyone is welcome to join.
-Ask questions, brainstorm ideas, or just talk farming.</p>
-<p>Refer to the schedule below, and use the "Join Call" link to join the call.</p>
-<p><strong>NOTE:</strong> In case you have problems joining a call, check the Riot.im <a href="https://riot.im/app/#/room/#farmOS:matrix.org">chat room</a>.
-Last minute updates or changes will be communicated there!</p>
-<h2 id="join-call"><a href="https://zoom.us/j/569677794">Join Call</a><a class="headerlink" href="#join-call" title="Permanent link">&para;</a></h2>
-<p>Calls are currently held on the second Wednesday of the month, at 2pm Eastern
-US time.</p>
-<p>Note that Daylight Savings Time is observed in the US, so the time relative to
-UTC (Universal Time Coordinated) will change twice a year. The schedule below
-shows that, along with the actual UTC times for each call. UTC is for most
-purposes the same as GMT.</p>
-<h3 id="2020-schedule">2020 Schedule<a class="headerlink" href="#2020-schedule" title="Permanent link">&para;</a></h3>
-<p>January 8th @ 2pm EST / 7pm UTC</p>
-<p>February 12th @ 2pm EST / 7pm UTC</p>
-<p>March 11th @ 2pm EDT / 6pm UTC</p>
-<p>April 8th @ 2pm EDT / 6pm UTC</p>
-<p>May 13th @ 2pm EDT / 6pm UTC</p>
-<p>June 10th @ 2pm EDT / 6pm UTC</p>
-<p>July 8th @ 2pm EDT / 6pm UTC</p>
-<p>August 12th @ 2pm EDT / 6pm UTC</p>
-<p>September 9th @ 2pm EDT / 6pm UTC</p>
-<p>October 14th @ 2pm EDT / 6pm UTC</p>
-<p>November 11th @ 2pm EST / 7pm UTC</p>
-<p>December 9th @ 2pm EST / 7pm UTC</p></div>
+<h1 id="configuring-a-local-https-reverse-proxy">Configuring a Local Https Reverse Proxy<a class="headerlink" href="#configuring-a-local-https-reverse-proxy" title="Permanent link">&para;</a></h1>
+<p>For general information about development setup first see <a href="/development/docker">Developing farmOS with Docker</a>.</p>
+<p>Some development testing is easier with FarmOS behind an https endpoint. A separate <a href="https://www.nginx.com/">NGINX</a> reverse proxy provides a simple way to configure an https endpoint without any changes to the Apache2 configuration which FarmOS/Drual is running on.</p>
+<h2 id="example-configuration">Example Configuration<a class="headerlink" href="#example-configuration" title="Permanent link">&para;</a></h2>
+<p><strong>docker-compose.yml</strong></p>
+<pre><code class="yaml">version: '2'
+services:
+  db:
+    image: mariadb:latest
+    volumes:
+      - './db:/var/lib/mysql'
+    expose:
+      - '3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: farm
+      MYSQL_DATABASE: farm
+      MYSQL_USER: farm
+      MYSQL_PASSWORD: farm
+
+  www:
+    depends_on:
+      - db
+    image: farmos/farmos:dev
+    volumes:
+      - './www:/var/www/html'
+    expose:
+      - '80'
+    environment:
+      XDEBUG_CONFIG: remote_host=172.17.0.1
+
+  proxy:
+    depends_on:
+      - www
+    image: nginx:latest
+    volumes:
+      - './nginx.conf:/etc/nginx/nginx.conf'
+      - './nginx/error_logs:/etc/nginx/error_logs'
+      - './devcerts:/etc/nginx/certs'
+    ports:
+      - '80:80'
+      - '443:443'
+
+</code></pre>
+
+<p><strong>nginx.conf</strong></p>
+<pre><code>events {
+
+}
+
+http {
+  error_log /etc/nginx/error_logs/error_log.log warn;
+  client_max_body_size 20m;
+
+  server {
+      listen 80;
+      server_name farmos.local;
+
+      rewrite ^/(.*)$ https://$host$request_uri? permanent; 
+  }
+
+  server {
+    server_name farmos.local;
+
+    location / {
+      proxy_pass http://www:80;
+
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Host $host:443;
+      proxy_set_header X-Forwarded-Port 443;
+      proxy_set_header X-Forwarded-Server $host;
+      proxy_set_header X-Forwarded-Proto https;
+    }
+
+    listen 443 ssl;
+    ssl_certificate /etc/nginx/certs/cert.pem;
+    ssl_certificate_key /etc/nginx/certs/key.pem;
+  }
+}
+
+</code></pre>
+
+<p><strong>Generate certificates with <a href="https://github.com/FiloSottile/mkcert">mkcert</a></strong></p>
+<pre><code class="sh">mkdir devcerts &amp;&amp; mkcert -key-file devcerts/key.pem -cert-file devcerts/cert.pem farmos.local *.farmos.local
+</code></pre>
+
+<p><strong>Start containers</strong></p>
+<pre><code class="sh">docker-compose up
+</code></pre>
+
+<p><strong>Add fake domain to /etc/hosts</strong></p>
+<pre><code class="sh">echo &quot;127.0.0.1 farmos.local&quot; &gt;&gt; /etc/hosts
+</code></pre>
+
+<pre><code class="sh">alias drush=&quot;docker-compose exec www drush&quot;
+drush site-install farm --locale=us --db-url=mysql://farm:farm@db/farm --site-name=Test0 --account-name=root --account-pass=test install_configure_form.update_status_module='array(FALSE,FALSE)'
+</code></pre>
+
+<p><em>Note: It is advisable to update the command above with a better password than 'test' before running it.</em></p>
+<p><strong>Enable reverse proxy settings in sites/default/settings.php (simplified from <a href="https://drupal.stackexchange.com/a/257399">this SO answer</a>)</strong></p>
+<pre><code class="sh">sudo sh -c &quot;printf \&quot;\n\n\\\$conf['reverse_proxy'] = TRUE;\n\\\$conf['reverse_proxy_addresses'] = [@\\\$_SERVER['REMOTE_ADDR']];\n\\\$base_url = \\\$_SERVER['HTTP_X_FORWARDED_PROTO'] . '://' . \\\$_SERVER['SERVER_NAME'];\n\&quot; &gt;&gt; www/sites/default/settings.php&quot;
+</code></pre>
+
+<p>This yields a FarmOS installation which can be accessed via https://farmos.local with a user named 'root' and a password of 'test' - or the better password that you wisely substituted above.</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/30754460/71647994-35b45400-2cb3-11ea-8702-b44c2fcebe66.png" /></p></div>
             </div>
         </div>
 
